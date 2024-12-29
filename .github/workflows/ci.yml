@@ -29,12 +29,9 @@ jobs:
             --disable-extension-update \
             --disable-firebird-sdbc \
             --disable-gio \
-            --disable-gstreamer-0-10 \
             --disable-gstreamer-1-0 \
-            --disable-gtk \
             --disable-gtk3 \
             --disable-introspection \
-            --disable-kde4 \
             --disable-largefile \
             --disable-lotuswordpro \
             --disable-lpsolve \
@@ -64,6 +61,7 @@ jobs:
             --without-junit \
             --without-krb5 \
             --without-myspell-dicts \
-            --without-system-dicts
+            --without-system-dicts \
+            --without-x
 
         find .
