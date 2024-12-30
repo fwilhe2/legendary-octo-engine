@@ -63,10 +63,13 @@ jobs:
             --without-krb5 \
             --without-myspell-dicts \
             --without-system-dicts \
-            --without-x
-
-        find .
+            --without-x \
+            --with-package-format=deb \
+            --enable-epm
 
         make
 
-        find .
+    - uses: actions/upload-artifact@v4
+      with:
+        name: lo-headless
+        path: '**/*.deb'
